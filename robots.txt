@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anadayo.github.io/naruto-card-vault/sitemap.xml
