@@ -84,6 +84,8 @@
     .section{margin:0 0 22px}.section-head{display:flex;align-items:end;gap:12px;margin-bottom:10px}.section-head h2{font:800 18px/1.35 var(--serif)}.section-head p{margin-left:auto;color:var(--muted);font-size:11px;text-align:right}
     .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.fact{border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:13px}.fact svg{width:18px;height:18px;color:var(--red);margin-bottom:8px}.fact b{display:block;font:700 16px/1.2 var(--mono)}.fact span{display:block;color:var(--muted);font-size:10px;margin-top:5px}
     .update-list{border-top:1px solid var(--line)}.update{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:12px;padding:13px 2px;border-bottom:1px solid var(--line);text-decoration:none}.update time{font:500 11px/1 var(--mono);color:var(--muted)}.update b{display:block;font-size:13px}.update span{color:var(--muted);font-size:10px}.update svg{width:17px;color:var(--muted)}
+    .live-panel{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;border:1px solid rgba(228,71,50,.55);border-radius:8px;background:linear-gradient(120deg,rgba(228,71,50,.14),var(--surface) 66%);padding:14px;margin-bottom:18px}.live-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--red);color:#fff}.live-mark svg{width:20px}.live-panel h2{font:800 15px/1.35 var(--serif)}.live-panel p{color:var(--muted);font-size:10px;margin-top:3px}.live-panel .btn{min-height:38px;padding:0 11px;font-size:11px}
+    .roadmap{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.roadmap-item{border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:12px}.roadmap-item time{display:block;color:var(--red);font:600 10px/1 var(--mono)}.roadmap-item b{display:block;font-size:12px;margin-top:7px}.roadmap-item span{display:block;color:var(--muted);font-size:10px;margin-top:2px}
     .search-panel{position:sticky;top:62px;z-index:20;background:rgba(11,12,13,.95);padding:4px 0 12px}.search-box{height:46px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0 12px}.search-box svg{width:18px;color:var(--muted)}.search-box input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--ink);font-size:16px}.filters{display:flex;gap:6px;overflow:auto;padding-top:8px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{white-space:nowrap;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--muted);padding:7px 11px;font-size:11px}.filter.active{border-color:var(--red);background:rgba(228,71,50,.12);color:var(--ink)}
     .character-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.character{position:relative;min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--surface);overflow:hidden}.character-visual{height:152px;display:grid;place-items:center;background:linear-gradient(145deg,var(--tone,#5b241d),#101213 72%);position:relative}.character-visual::after{content:'';position:absolute;width:92px;height:92px;border:1px solid rgba(255,255,255,.11);transform:rotate(45deg)}.monogram{position:relative;z-index:1;font:800 42px/1 var(--serif);color:rgba(255,255,255,.9);text-shadow:0 5px 22px rgba(0,0,0,.5)}
     .character-body{padding:11px}.character-top{display:flex;gap:8px;align-items:start}.character h3{font-size:14px;line-height:1.35}.character-meta{font-size:10px;color:var(--muted);margin-top:3px}.save{margin-left:auto;width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--muted)}.save svg{width:17px}.save.active{color:var(--amber);border-color:rgba(239,181,74,.5);background:rgba(239,181,74,.08)}
@@ -97,7 +99,7 @@
     footer{margin-top:30px;border-top:1px solid var(--line);padding:20px 0 6px;color:var(--muted);font-size:10px}.footer-links{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}.footer-links a{color:var(--ink)}
     .bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(12,13,14,.95);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}.bottom-nav-inner{width:min(100%,800px);height:var(--nav);margin:auto;display:grid;grid-template-columns:repeat(4,1fr)}.nav-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:0;background:transparent;color:var(--muted);font-size:9px}.nav-btn svg{width:20px;height:20px}.nav-btn.active{color:var(--red)}
     .toast{position:fixed;left:50%;bottom:calc(var(--nav) + 16px);z-index:60;transform:translate(-50%,12px);background:#f2efe8;color:#111;border-radius:7px;padding:9px 13px;font-size:11px;font-weight:700;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
-    @media(max-width:600px){.hero{min-height:390px}.hero-media{background-image:linear-gradient(0deg,rgba(7,8,8,.98) 0%,rgba(7,8,8,.78) 58%,rgba(7,8,8,.2) 100%),url('assets/hero.jpg');background-position:61% center}.hero-content{width:100%;padding:190px 18px 18px}.hero-copy{font-size:12px}.facts{grid-template-columns:1fr 1fr}.fact:last-child{grid-column:1/-1}.update{grid-template-columns:70px 1fr auto}.character-visual{height:132px}}
+    @media(max-width:600px){.hero{min-height:390px}.hero-media{background-image:linear-gradient(0deg,rgba(7,8,8,.98) 0%,rgba(7,8,8,.78) 58%,rgba(7,8,8,.2) 100%),url('assets/hero.jpg');background-position:61% center}.hero-content{width:100%;padding:190px 18px 18px}.hero-copy{font-size:12px}.facts{grid-template-columns:1fr 1fr}.fact:last-child{grid-column:1/-1}.update{grid-template-columns:70px 1fr auto}.character-visual{height:132px}.live-panel{grid-template-columns:auto 1fr}.live-panel .btn{grid-column:1/-1;width:100%}.roadmap{grid-template-columns:1fr}.brand{font-size:15px}.release-chip{display:none}}
     @media(min-width:680px){.character-grid{grid-template-columns:repeat(3,1fr)}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
   </style>
@@ -129,6 +131,12 @@
         </div>
       </div>
 
+      <section class="live-panel" aria-label="次回の公式発表">
+        <div class="live-mark"><i data-lucide="radio"></i></div>
+        <div><h2>NARUTO: What’s Next?</h2><p>10月11日 6:00 JST／カードゲーム最新情報を世界同時配信予定</p></div>
+        <a class="btn btn-primary" href="https://www.youtube.com/live/G2B8oLsZNeU" target="_blank" rel="noopener" data-official="nycc_live"><i data-lucide="play"></i>配信を見る</a>
+      </section>
+
       <section class="section">
         <div class="section-head"><h2>判明していること</h2><p>2026.10.10確認</p></div>
         <div class="facts">
@@ -141,9 +149,23 @@
       <section class="section">
         <div class="section-head"><h2>公式アップデート</h2><p>一次情報のみ掲載</p></div>
         <div class="update-list">
+          <a class="update" href="https://naruto-official.com/news/01_2695" target="_blank" rel="noopener" data-official="nycc_announcement"><time>2026.09.29</time><div><b>NYCCで最新情報を解禁予定</b><span>日本時間10月11日6:00から世界同時配信</span></div><i data-lucide="arrow-up-right"></i></a>
+          <a class="update" href="https://naruto-official.com/news/01_2668" target="_blank" rel="noopener" data-official="gencon_report"><time>2026.08.18</time><div><b>Gen Con 2026体験会レポート</b><span>実物カード展示と世界初の一般向け体験会</span></div><i data-lucide="arrow-up-right"></i></a>
           <a class="update" href="https://www.naruto-cardgame.com/jp/welcome/" target="_blank" rel="noopener" data-official="rules"><time>2026.07.29</time><div><b>ゲーム概要・カードタイプ公開</b><span>ルール、アートワーク、ロードマップ</span></div><i data-lucide="arrow-up-right"></i></a>
           <a class="update" href="https://naruto-official.com/news/01_2661" target="_blank" rel="noopener" data-official="roadmap"><time>2026.07.29</time><div><b>2027年夏へのロードマップ</b><span>世界イベントと体験会情報</span></div><i data-lucide="arrow-up-right"></i></a>
           <a class="update" href="https://naruto-official.com/news/01_2637" target="_blank" rel="noopener" data-official="announcement"><time>2026.06.18</time><div><b>NARUTO CARD GAME始動</b><span>世界同時リリースを発表</span></div><i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>発売までのロードマップ</h2><p>公式発表ベース</p></div>
+        <div class="roadmap">
+          <article class="roadmap-item"><time>OCT 09–11</time><b>PAX Australia 2026</b><span>体験会</span></article>
+          <article class="roadmap-item"><time>OCT 22–25</time><b>SPIEL Essen／Paris Games Week</b><span>体験会</span></article>
+          <article class="roadmap-item"><time>OCT 28–NOV 01</time><b>Lucca Comics & Games</b><span>体験会</span></article>
+          <article class="roadmap-item"><time>DEC 2026</time><b>さらなる新情報</b><span>公式発表予定</span></article>
+          <article class="roadmap-item"><time>JAN 2027</time><b>Tutorial Session</b><span>店舗で順次開始予定</span></article>
+          <article class="roadmap-item"><time>SUMMER 2027</time><b>世界同時発売</b><span>発売日の続報待ち</span></article>
         </div>
       </section>
 
