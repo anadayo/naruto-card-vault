@@ -1,6 +1,6 @@
 # NARUTO CARD VAULT
 
-Unofficial information hub for the NARUTO CARD GAME scheduled for worldwide release in summer 2027.
+Unofficial information hub for the NARUTO CARD GAME scheduled for worldwide release in June 2027.
 
 ## Local preview
 
